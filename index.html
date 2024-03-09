@@ -3,181 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    </head>
-    <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
 
-        <div class="container">
+        <div class="logo">
+            <img src="image/img.jpg" alt="">
+        </div>
 
-           <div class="avatar">
-            <img src="img.jpg" alt="">
-           </div>
+        <div class="navDiv">
+            <label for="menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
 
-           <div class="name">
-                <h1>Phạm Trần Mỹ Duyên</h1>
-                <div class="specialize">Frond-End Developer</div>
-                <ul class="contact">
-                    <li>
-                        <span>P</span> +84328088024
-                    </li>
-                    <li>
-                        <span>E</span> phamduyen29052002@gmail.com
-                    </li>
-                    <li>
-                        <span>T</span> https://www.overleaf.com/project/65eb1f3785807374287d99f5
-                    </li>
-                    <li>
-                        <span>G</span> https://github.com/DynDyn2k2
-                    </li>
-                </ul>
-           </div>
+        <input type="checkbox" id="menu">
 
-           <div class="info">
-                <ul>
-                    <li>From <b>HCMC</b> - VietNam</li>
-                    <li>29/05/2002</li>
-                    <li>SaiGon University</li>
-                </ul>
-           </div>
+        <ul class="nav">
+            <label for="menu">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#home">Contact</a></li>
+        </ul>
 
-           <div class="intro">
-                <h2>INTRODUCE MYSELT</h2>
-                I would like to thank you for giving me the opportunity to participate in this interview today. My name is Duyen. I just graduated from university 
-                    majoring in information technology. And looking for the first job.
+    </header>
 
-                I am an avid reader, love to learn and extrovert. I like to work in a serious environment and can develop my career. I believe that with what I have 
-                    accumulated during my studies as well as through social activities, I can take on the position Frond-end Developer of your company. 
-                    Thank you for listening.
-            </div>
+    <div class="container">
 
-           <div class="career_goals">
-                <h2>CAREER GOALS</h2>
-                <div class="item">
-                    Become a good, well-qualified Developer with background knowledge of web design and development. Skills training; Develop your qualities through 
-                        conquering certificates of high professional value. Develop products and personal projects to build brands.
-                </div>
-           
-                <h2 class="skills">SKILLS</h2>
+        <!-- banner -->
+        <div class="banner" id="home">
 
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>Java</li>
-                    <li>PHP</li>
-                    <li>MySql</li>
-                    <li>Git</li>
-                    <li>C#</li>
-                    <li>Spring Boot</li>
-                </ul>
-            </div>
+            <div class="content">
+                <p>WELCOME TO MY PROFILE</p>
+                <h1>
+                    Hi, I'm Duyen </br>
+                    a 
+                    <div class="gradientText">
+                        <div class="job"
+                            data-job1="{Developer.}"
+                            data-job2="{FrondEnd.}"
+                        ></div>
+                    </div>
+                </h1>
 
-           <div class="project">
+                <p>I would like to thank you for giving me the opportunity to participate in this interview today. My name is Duyen. 
+                    I just graduated from university majoring in information technology. And looking for the first job. 
+                    I am an avid reader, love to learn and extrovert. I like to work in a serious environment and can develop my career. 
+                    I believe that with what I have accumulated during my studies as well as through social activities, I can take on the position 
+                    Frond-end Developer of your company. Thank you for listening.
+                </p>
 
-            <h2>PROJECTS</h2>
-
-            <div class="item">
-                <h4>ProjectPython-FaceID</h4>
-
-                <div class="time">
-                    Apr 16, 2023
-                </div>
-
-                <div class="location">
-                    Frond-end Developer
-                </div>
-
-                <div class="des">
-                    The facial recognition roll call project is an interesting project in the field of artificial intelligence and image processing. 
-                        This project focuses on developing a system that automatically identifies and takes attendance of individuals based on their facial images.
-
-                    In this project, you can learn and apply techniques and technologies such as:
+                <div class="find">
+                    <h3>CONTACT WITH ME</h3>
                     <ul>
-                        <li>1. Face recognition: Uses machine learning models and deep neural networks to identify and classify faces in images.</li>
-
-                        <li>2. Feature extraction: Identify important facial features such as contours, eye points, nose and mouth.</li>
-
-                        <li>3. Comparison and classification: Compare the detected face with a database of known faces to determine whether 
-                                the person is registered or not.</li>
-
-                        <li>4. Image processing and preprocessing: Clean and normalize images to enhance recognition performance.</li>
-                        
-                        <li>5. User Interface: Develop an easy-to-use interface for users to enter data and track attendance.</li>
-                        
+                        <li><a href="https://www.facebook.com/PhamDyne/"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://github.com/DynDyn2k2"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://www.overleaf.com/project/65eb1f3785807374287d99f5"><i class="fa-solid fa-file"></i></a></li>
                     </ul>
                     
-                    In this project, I work on attendance management. Manage student check-in and check-out times, get student information displayed on the screen...
                 </div>
 
             </div>
-    
-            <div class="item">
 
-                <h4>Socialmedia</h4>
-
-                <div class="time">
-                    Dec 5,2023
-                </div>
-
-                <div class="location">
-                    Frond-end Developer
-                </div>
-
-                <div class="des">
-                    Socialmedia is a project on the website Pinterest. It is a social networking platform that allows users to create, manage, 
-                        and share "pin boards" of images, videos, and links from across the internet. This platform is often used to search and store ideas, 
-                        creativity, and personal interests.
-
-                    Some basic functions that a Socialmedia project includes:
-                    <ul>
-                        <li>1. User registration and login.</li>
-                        <li>2. Create, edit and delete tables.</li>
-                        <li>3. Add, modify and delete items (pins) on the boards.</li>
-                        <li>4. Search and browse items by keyword or topic.</li>
-                        <li>5. Share items and tables with other users.</li>
-                        <li>6. Chat messages</li>
-                    </ul>
-
-                    In this project, I work on comment management, login and registration.
-
-                </div>
-
+            <div class="avatar">
+                <img src="image/img.jpg" alt="">
             </div>
-    
-            <div class="item">
 
-                <h4>CSharp-QLKhachSan</h4>
-
-                <div class="time">
-                    Mar 16, 2023
-                </div>
-               
-                <div class="location">
-                    Frond-end Developer
-                </div>
-
-                <div class="des">
-                    Hotel management project is a software project designed to help manage a hotel operate efficiently. 
-                        This is an important application in the tourism and hospitality industry because it helps optimize management processes, 
-                        from booking rooms, managing employees, calculating revenue to interacting with customers.
-
-                    Some important features in hotel management projects include:
-                    <ul>
-                        <li>1. Reservation management: Support managing room reservations, checking availability and booked rooms.</li>
-                        <li>2. Warehouse management: Store information about food and beverage products to serve customer needs.</li>
-                        <li>3. Employee management: Monitor employee work schedules, assigned tasks and work performance.</li>
-                        <li>4. Payment management: Calculate and manage payment invoices, calculate taxes and service fees.</li>
-                        <li>5. Reporting and statistics: Provides reports on revenue, occupancy rate, and other hotel performance indicators.</li>   
-                    </ul>
-
-                    In this project, I worked on other settings (changing the hotel's name, phone number, address, time, logo and interface), 
-                        and the hotel's revenue and profit statistics.
-                </div>
-            </div>
-           </div>
         </div>
+
+        <!-- skill -->
+        <div id="skill">
+
+            <div class="title">SKILL</div>
+
+            <div class="listSkill">
+
+                <div class="item">
+                    <div class="name">HTML</div>
+                    <div class="evaluate"
+                        style="--point: 50%"></div>
+                </div>
+
+                <div class="item">
+                    <div class="name">CSS</div>
+                    <div class="evaluate"
+                        style="--point: 50%"></div>
+                </div>
+
+                <div class="item">
+                    <div class="name">JavaScript</div>
+                    <div class="evaluate"
+                        style="--point: 50%"></div>
+                </div>
+
+                <div class="item">
+                    <div class="name">PHP</div>
+                    <div class="evaluate"
+                        style="--point: 50%"></div>
+                </div>
+
+                <div class="item">
+                    <div class="name">C#</div>
+                    <div class="evaluate"
+                        style="--point: 50%"></div>
+                </div>
+
+                <div class="item">
+                    <div class="name">Java</div>
+                    <div class="evaluate"
+                        style="--point: 50%"></div>
+                </div>
+
+                <div class="item">
+                    <div class="name">MySQL</div>
+                    <div class="evaluate"
+                        style="--point: 50%"></div>
+                </div>
+
+                <div class="item">
+                    <div class="name">Git</div>
+                    <div class="evaluate"
+                        style="--point: 50%"></div>
+                </div>
+
+                <div class="item">
+                    <div class="name">Spring Boot</div>
+                    <div class="evaluate"
+                        style="--point: 50%"></div>
+                </div>
+
+                <div class="item">
+                    <div class="name">ReactJS</div>
+                    <div class="evaluate"
+                        style="--point: 50%"></div>
+                </div>
+
+            </div>
+
+            <!-- Project -->
+            <div id="project">
+
+                <div class="title">PROJECT</div>
+
+                <div class="listProject">
+
+                    <div class="item">
+                        
+                        <div class="name">
+                            FACE RECOGNITION ATTENDANCE
+                        </div>
+
+                        <div class="time">
+                            Apr, 2023
+                        </div>
+
+                        <img src="image/pythonFaceID.jpg" alt="">
+
+                        <div class="des">
+                            The facial recognition roll call project is an interesting project in the field of artificial intelligence and image processing. 
+                                This project focuses on developing a system that automatically identifies and takes attendance of individuals based on their facial images.
         
-    </body>
-    </html>
+                            In this project, you can learn and apply techniques and technologies such as:
+                            <ul>
+                                <li>Face recognition: Uses machine learning models and deep neural networks to identify and classify faces in images.</li>
+        
+                                <li>Feature extraction: Identify important facial features such as contours, eye points, nose and mouth.</li>
+        
+                                <li>Comparison and classification: Compare the detected face with a database of known faces to determine whether 
+                                        the person is registered or not.</li>
+        
+                                <li>Image processing and preprocessing: Clean and normalize images to enhance recognition performance.</li>
+                                
+                                <li>User Interface: Develop an easy-to-use interface for users to enter data and track attendance.</li>
+                                
+                            </ul>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="item">
+                        
+                        <div class="name">
+                            HOTEL MANAGEMENT
+                        </div>
+
+                        <div class="time">
+                            Mar, 2023
+                        </div>
+
+                        <img src="image/qlkhachsan.jpg" alt="">
+
+                        <div class="des">
+                            Hotel management project is a software project designed to help manage a hotel operate efficiently. 
+                                This is an important application in the tourism and hospitality industry because it helps optimize management processes, 
+                                from booking rooms, managing employees, calculating revenue to interacting with customers.
+        
+                            Some important features in hotel management projects include:
+                            <ul>
+                                <li>Reservation management: Support managing room reservations, checking availability and booked rooms.</li>
+                                <li>Warehouse management: Store information about food and beverage products to serve customer needs.</li>
+                                <li>Employee management: Monitor employee work schedules, assigned tasks and work performance.</li>
+                                <li>Payment management: Calculate and manage payment invoices, calculate taxes and service fees.</li>
+                                <li>Reporting and statistics: Provides reports on revenue, occupancy rate, and other hotel performance indicators.</li>   
+                            </ul>
+        
+                        </div>
+
+                    </div>
+
+                    <div class="item">
+                        
+                        <div class="name">
+                            LIPSTICK-SELLING WEBSITE
+                        </div>
+
+                        <div class="time">
+                            Nov, 2022
+                        </div>
+
+                        <img src="image/lipstick-selling.jpg" alt="">
+
+                        <div class="des">
+                            The lipstick website project is an e-commerce platform specifically designed to provide a convenient and enjoyable shopping experience 
+                                for customers who love beauty. Here are some highlights of this project:
+
+                            <ul>
+                                <li>User-Friendly Interface: The website is designed with an intuitive and easy-to-use interface, helping users 
+                                    easily search and shop for suitable lipstick products.</li>
+                                <li>Product diversity: The project provides a wide range of lipstick products from famous and reliable brands. 
+                                    From matte lipstick to lip balm, customers can find every type of lipstick they need.</li>
+                                <li>Customization Feature: Customers can customize the color, quality and price of lipstick according to 
+                                    their personal preferences and needs.</li>
+                                <li>Customer management: Manage detailed information of each customer for easy management.</li>
+                                <li>Product management: Smart product management system, helps manage and test products effectively.</li>   
+                            </ul>
+        
+                        </div>
+
+                    </div>
+
+                    <div class="item">
+                        
+                        <div class="name">
+                            SOCIAL MEDIA
+                        </div>
+
+                        <div class="time">
+                            Dec, 2023
+                        </div>
+
+                        <img src="image/socialmedia.jpg" alt="">
+                        
+                        <div class="des">
+                            Socialmedia is a project on the website Pinterest. It is a social networking platform that allows users to create, manage, 
+                                and share "pin boards" of images, videos, and links from across the internet. This platform is often used to search and store ideas, 
+                                creativity, and personal interests.
+        
+                            Some basic functions that a Socialmedia project includes:
+                            <ul>
+                                <li>User registration and login.</li>
+                                <li>Create, edit and delete tables.</li>
+                                <li>Add, modify and delete items (pins) on the boards.</li>
+                                <li>Search and browse items by keyword or topic.</li>
+                                <li>Share items and tables with other users.</li>
+                                <li>Chat messages</li>
+                            </ul>
+        
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
